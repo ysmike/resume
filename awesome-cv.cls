@@ -197,6 +197,10 @@
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
+% For elements of techincal
+\newcommand*{\areastyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\frameworkstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
@@ -549,11 +553,11 @@
 
 % Define a footer for CV
 % Usage: \makecvfooter{<left>}{<center>}{<right>}
-\newcommand*{\makecvfooter}[3]{%
+\newcommand*{\makecvfooter}[1]{%
   \fancyfoot{}
-  \fancyfoot[L]{\footerstyle{#1}}
-  \fancyfoot[C]{\footerstyle{#2}}
-  \fancyfoot[R]{\footerstyle{#3}}
+%  \fancyfoot[L]{\footerstyle{#1}}
+  \fancyfoot[C]{\footerstyle{#1}}
+%  \fancyfoot[R]{\footerstyle{#3}}
 }
 
 % Define a section for CV
@@ -583,6 +587,25 @@
   \par
   \vspace{2mm}
 }
+
+% Define an environment for cvtechnical
+\newenvironment{cvtechnicals}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-3mm}
+}
+
+% Define a line of cv technical
+% Usage: \cvtechnical{<area>}{<frameworks>}
+\newcommand*{\cvtechnical}[6]{%
+%  \areastyle{#1} \hspace{5mm} \frameworkstyle{#2} \\
+\setlength{\extrarowheight}{2.5pt}
+\begin{tabular}{ @{}r l }
+  \areastyle{#1} & \frameworkstyle{#2} \\
+  \areastyle{#3} & \frameworkstyle{#4} \\
+  \areastyle{#5} & \frameworkstyle{#6} \\
+\end{tabular}
+}
+
 
 % Define an environment for cventry
 \newenvironment{cventries}{%
