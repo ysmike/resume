@@ -283,6 +283,7 @@ TSWLatexianTemp*
 samples/
 coverletter.tex
 coverletter.pdf
+coverletter_template.pdf
 
 # REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
