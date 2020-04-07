@@ -329,7 +329,7 @@
 % Usage: \googlescholar{<googlescholar userid>}{<googlescholar username>}
 % e.g.https://scholar.google.co.uk/citations?user=wpZDx1cAAAAJ
 % would be \googlescholar{wpZDx1cAAAAJ}{Name-to-display-next-icon}
-% If 'googlescholar-name' is not provided than it defaults to
+% If 'googlescholar-name' is not provided then it defaults to
 % '\firstname \lastname'
 \newcommand*{\googlescholar}[2]{%
   \def\@googlescholarid{#1}%
