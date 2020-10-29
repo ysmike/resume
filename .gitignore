@@ -278,6 +278,9 @@ TSWLatexianTemp*
 # temp tex files
 *_temp.tex
 
+# temp pdf files
+*_temp.pdf
+
 # Other
 .DS_Store
 samples/
