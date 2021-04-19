@@ -1,4 +1,4 @@
-# 🔖 <br>Resume Template
+# 🔖 Resume Template
 
 <a href="https://github.com/posquit0/Awesome-CV" target="_blank" >Awesome CV</a> simplified to my liking.
 
